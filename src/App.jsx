@@ -7,14 +7,14 @@ import Search from './components/Search/Search'
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   return (
-   <>
-   User Avatar Finder
+   <div className='wrapper'>
+
+   <h1>User Avatar Finder</h1>
+
    <Search updateSearchTerm = {setSearchTerm}/>
-   {searchTerm}
-   
     {searchTerm &&  <UserDetails userName={searchTerm}/>}
    
-   </>
+   </div>
   )
 }
 

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import useDebounce from "../../hooks/useDebounce";
+import './Search.css'
+
 
 function Search({updateSearchTerm}){
     const debouncedCallBack = useDebounce((e)=>{
@@ -7,7 +9,7 @@ function Search({updateSearchTerm}){
     })
 
     return(
-        <div>
+        <div className="input-wrapper">
             <input type="text" placeholder="Enter User Name" onChange={debouncedCallBack} />
         </div>
     )
