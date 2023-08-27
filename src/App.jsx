@@ -5,7 +5,6 @@ import './App.css'
 import UserDetails from './components/userDetails/userDetails'
 import Search from './components/Search/Search'
 function App() {
-  // https://api.github.com/users/HemantNavlani
   const [searchTerm, setSearchTerm] = useState('');
   return (
    <>
